@@ -1,0 +1,22 @@
+#map {
+    height: 100vh;
+    width: 100%;
+}
+
+#search-box {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 1000;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#search-button {
+    position: absolute;
+    top: 10px;
+    left: 210px;
+    z-index: 1000;
+    padding: 5px 10px;
+    font-size: 14px;
+}

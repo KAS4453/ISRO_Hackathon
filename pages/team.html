@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Members</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for the background video */
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Additional styles for the team member boxes */
+        .team-box {
+            background: rgba(0, 0, 0, 0.6); /* Dark background with opacity */
+            color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Ensures image and text don't overflow */
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="relative text-white font-roboto">
+
+    <!-- Background Video -->
+    <video class="background-video" autoplay muted loop>
+        <source src="../../images/Y2meta.app-Free 4K Footage   Earth Rotating in space   live wallpaper,free background 1080p-(1080p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Container for content -->
+    <div class="flex flex-col items-center justify-center min-h-screen p-4">
+        <h1 class="text-4xl font-bold mb-10 font-montserrat">Team Members</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-4xl">
+
+            <!-- Designer Box 1 -->
+            <div class="team-box">
+                <img src="https://via.placeholder.com/400x200" alt="John Doe">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Rudra Baunk</h2>
+                    <p>Lead Designer with over 10 years of experience in UX/UI.</p>
+                </div>
+            </div>
+
+            <!-- Designer Box 2 -->
+            <div class="team-box">
+                <img src="https://via.placeholder.com/400x200" alt="Jane Smith">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Pranjal Upadhyay</h2>
+                    <p>Creative Director specializing in visual design and branding.</p>
+                </div>
+            </div>
+
+            <!-- Designer Box 3 -->
+            <div class="team-box">
+                <img src="https://via.placeholder.com/400x200" alt="Alice Johnson">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Kunwar Arpit Singh</h2>
+                    <p>Senior Graphic Designer with expertise in digital and print media.</p>
+                </div>
+            </div>
+
+            <!-- Designer Box 4 -->
+            <div class="team-box">
+                <img src="https://via.placeholder.com/400x200" alt="Bob Brown">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold mb-4">Ankush Prakash</h2>
+                    <p>UX/UI Designer focused on user-centered design and research.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

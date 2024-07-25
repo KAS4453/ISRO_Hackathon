@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arunachal Pradesh Districts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color:  #fafafa;
+      color: rgb(2, 2, 2); /* Default text color for readability */
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+  
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../images/arunachal pradesh.jpg'); /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1; /* Ensure the image stays behind the content */
+    }
+  
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: rgb(255, 255, 255);
+      text-align: center;
+    }
+  
+    .card {
+      background: rgba(255, 255, 255);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0,0.1);
+      text-align: center;
+    }
+  
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .card p {
+      color: rgb(0, 0, 0); /* Ensure all text within card is white */
+    }
+  
+    h1 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+  
+    /* Ensure the content area has enough height to allow scrolling */
+    .scrollable-content {
+      min-height: 100vh;
+    }
+     /* Back to Top button styles */
+     .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: none; /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      z-index: 1000; /* Ensure it stays on top */
+    }
+
+    .back-to-top:hover {
+      background-color: #0056b3;
+    }
+        /* Add your styles here */
+    .back-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<div class="background-image"></div>
+<button class="back-button" onclick="location.href='../../index.html'">Back to Main Page</button>
+
+<div class="content scrollable-content">
+  <h1 class="text-3xl font-bold text-center mb-8">Districts of Arunachal Pradesh</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Anjaw -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Anjaw_district">
+          <img src="https://via.placeholder.com/150" alt="Anjaw" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Anjaw</p>
+          <p class="text-center text-sm">Population: 24,000</p>
+          <p class="text-center text-sm">Sightseeing: Hayuliang, Kibithoo</p>
+          <p class="text-center text-sm">Power Consumption: 8 MW</p>
+        </a>
+      </div>
+      <!-- Changlang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Changlang_district">
+          <img src="https://via.placeholder.com/150" alt="Changlang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Changlang</p>
+          <p class="text-center text-sm">Population: 1,20,000</p>
+          <p class="text-center text-sm">Sightseeing: Namdapha National Park, Miao</p>
+          <p class="text-center text-sm">Power Consumption: 15 MW</p>
+        </a>
+      </div>
+      <!-- Dibang Valley -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Dibang_Valley_district">
+          <img src="https://via.placeholder.com/150" alt="Dibang Valley" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Dibang Valley</p>
+          <p class="text-center text-sm">Population: 50,000</p>
+          <p class="text-center text-sm">Sightseeing: Anini, Mehao Wildlife Sanctuary</p>
+          <p class="text-center text-sm">Power Consumption: 12 MW</p>
+        </a>
+      </div>
+      <!-- East Kameng -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/East_Kameng_district">
+          <img src="https://via.placeholder.com/150" alt="East Kameng" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">East Kameng</p>
+          <p class="text-center text-sm">Population: 80,000</p>
+          <p class="text-center text-sm">Sightseeing: Seppa, Pakke Wildlife Sanctuary</p>
+          <p class="text-center text-sm">Power Consumption: 20 MW</p>
+        </a>
+      </div>
+      <!-- East Siang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/East_Siang_district">
+          <img src="https://via.placeholder.com/150" alt="East Siang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">East Siang</p>
+          <p class="text-center text-sm">Population: 1,00,000</p>
+          <p class="text-center text-sm">Sightseeing: Pasighat, Siang River</p>
+          <p class="text-center text-sm">Power Consumption: 25 MW</p>
+        </a>
+      </div>
+      <!-- Kamle -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Kamle_district">
+          <img src="https://via.placeholder.com/150" alt="Kamle" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Kamle</p>
+          <p class="text-center text-sm">Population: 45,000</p>
+          <p class="text-center text-sm">Sightseeing: Raga, Ziro Valley</p>
+          <p class="text-center text-sm">Power Consumption: 12 MW</p>
+        </a>
+      </div>
+      <!-- Kra Daadi -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Kra_Daadi_district">
+          <img src="https://via.placeholder.com/150" alt="Kra Daadi" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Kra Daadi</p>
+          <p class="text-center text-sm">Population: 35,000</p>
+          <p class="text-center text-sm">Sightseeing: Palin, Yachuli</p>
+          <p class="text-center text-sm">Power Consumption: 10 MW</p>
+        </a>
+      </div>
+      <!-- Kurung Kumey -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Kurung_Kumey_district">
+          <img src="https://via.placeholder.com/150" alt="Kurung Kumey" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Kurung Kumey</p>
+          <p class="text-center text-sm">Population: 40,000</p>
+          <p class="text-center text-sm">Sightseeing: Koloriang, Parsi-Parlo</p>
+          <p class="text-center text-sm">Power Consumption: 14 MW</p>
+        </a>
+      </div>
+      <!-- Longding -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Longding_district">
+          <img src="https://via.placeholder.com/150" alt="Longding" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Longding</p>
+          <p class="text-center text-sm">Population: 45,000</p>
+          <p class="text-center text-sm">Sightseeing: Longding Fort, Niaw Monastery</p>
+          <p class="text-center text-sm">Power Consumption: 12 MW</p>
+        </a>
+      </div>
+      <!-- Lower Dibang Valley -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Lower_Dibang_Valley_district">
+          <img src="https://via.placeholder.com/150" alt="Lower Dibang Valley" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Lower Dibang Valley</p>
+          <p class="text-center text-sm">Population: 53,000</p>
+          <p class="text-center text-sm">Sightseeing: Roing, Mayudia</p>
+          <p class="text-center text-sm">Power Consumption: 18 MW</p>
+        </a>
+      </div>
+      <!-- Lower Subansiri -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Lower_Subansiri_district">
+          <img src="https://via.placeholder.com/150" alt="Lower Subansiri" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Lower Subansiri</p>
+          <p class="text-center text-sm">Population: 101,000</p>
+          <p class="text-center text-sm">Sightseeing: Ziro Valley, Talley Valley Wildlife Sanctuary</p>
+          <p class="text-center text-sm">Power Consumption: 30 MW</p>
+        </a>
+      </div>
+      <!-- Namsai -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Namsai_district">
+          <img src="https://via.placeholder.com/150" alt="Namsai" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Namsai</p>
+          <p class="text-center text-sm">Population: 85,000</p>
+          <p class="text-center text-sm">Sightseeing: Golden Pagoda, Namsai Buddha Vihara</p>
+          <p class="text-center text-sm">Power Consumption: 22 MW</p>
+        </a>
+      </div>
+      <!-- Papum Pare -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Papum_Pare_district">
+          <img src="https://via.placeholder.com/150" alt="Papum Pare" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Papum Pare</p>
+          <p class="text-center text-sm">Population: 81,000</p>
+          <p class="text-center text-sm">Sightseeing: Itanagar, Namdapha National Park</p>
+          <p class="text-center text-sm">Power Consumption: 40 MW</p>
+        </a>
+      </div>
+      <!-- Shangrila -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Shangrila_district">
+          <img src="https://via.placeholder.com/150" alt="Shangrila" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Shangrila</p>
+          <p class="text-center text-sm">Population: 30,000</p>
+          <p class="text-center text-sm">Sightseeing: Notable areas include scenic spots and monasteries</p>
+          <p class="text-center text-sm">Power Consumption: 10 MW</p>
+        </a>
+      </div>
+       <!-- Shi-Yomi -->
+       <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Shi-Yomi_district">
+          <img src="https://via.placeholder.com/150" alt="Shi-Yomi" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Shi-Yomi</p>
+          <p class="text-center text-sm">Population: 30,000</p>
+          <p class="text-center text-sm">Sightseeing: Tato, Mechuka</p>
+          <p class="text-center text-sm">Power Consumption: 10 MW</p>
+        </a>
+      </div>
+      <!-- Tawang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Tawang_district">
+          <img src="https://via.placeholder.com/150" alt="Tawang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Tawang</p>
+          <p class="text-center text-sm">Population: 50,000</p>
+          <p class="text-center text-sm">Sightseeing: Tawang Monastery, Bumla Pass</p>
+          <p class="text-center text-sm">Power Consumption: 15 MW</p>
+        </a>
+      </div>
+      <!-- Upper Dibang Valley -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Upper_Dibang_Valley_district">
+          <img src="https://via.placeholder.com/150" alt="Upper Dibang Valley" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Upper Dibang Valley</p>
+          <p class="text-center text-sm">Population: 28,000</p>
+          <p class="text-center text-sm">Sightseeing: Anini, Mehao Wildlife Sanctuary</p>
+          <p class="text-center text-sm">Power Consumption: 8 MW</p>
+        </a>
+      </div>
+      <!-- Upper Subansiri -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Upper_Subansiri_district">
+          <img src="https://via.placeholder.com/150" alt="Upper Subansiri" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Upper Subansiri</p>
+          <p class="text-center text-sm">Population: 54,000</p>
+          <p class="text-center text-sm">Sightseeing: Taliha, Siyum</p>
+          <p class="text-center text-sm">Power Consumption: 18 MW</p>
+        </a>
+      </div>
+      <!-- West Kameng -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/West_Kameng_district">
+          <img src="https://via.placeholder.com/150" alt="West Kameng" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">West Kameng</p>
+          <p class="text-center text-sm">Population: 78,000</p>
+          <p class="text-center text-sm">Sightseeing: Bomdila, Dirang Valley</p>
+          <p class="text-center text-sm">Power Consumption: 25 MW</p>
+        </a>
+      </div>
+      <!-- West Siang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/West_Siang_district">
+          <img src="https://via.placeholder.com/150" alt="West Siang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">West Siang</p>
+          <p class="text-center text-sm">Population: 75,000</p>
+          <p class="text-center text-sm">Sightseeing: Aalo, Pasighat</p>
+          <p class="text-center text-sm">Power Consumption: 20 MW</p>
+        </a>
+      </div>
+      <!-- Aalo -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Aalo">
+          <img src="https://via.placeholder.com/150" alt="Aalo" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Aalo</p>
+          <p class="text-center text-sm">Population: 15,000</p>
+          <p class="text-center text-sm">Sightseeing: Aalo Fort, Kamki</p>
+          <p class="text-center text-sm">Power Consumption: 10 MW</p>
+        </a>
+      </div>
+      <!-- Bomdila -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Bomdila">
+          <img src="https://via.placeholder.com/150" alt="Bomdila" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Bomdila</p>
+          <p class="text-center text-sm">Population: 20,000</p>
+          <p class="text-center text-sm">Sightseeing: Bomdila Monastery, Dirang</p>
+          <p class="text-center text-sm">Power Consumption: 12 MW</p>
+        </a>
+      </div>
+      <!-- Kalaktang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Kalaktang">
+          <img src="https://via.placeholder.com/150" alt="Kalaktang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Kalaktang</p>
+          <p class="text-center text-sm">Population: 10,000</p>
+          <p class="text-center text-sm">Sightseeing: Kalaktang Monastery</p>
+          <p class="text-center text-sm">Power Consumption: 7 MW</p>
+        </a>
+      </div>
+      <!-- Lepa-Rada -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Lepa-Rada_district">
+          <img src="https://via.placeholder.com/150" alt="Lepa-Rada" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Lepa-Rada</p>
+          <p class="text-center text-sm">Population: 22,000</p>
+          <p class="text-center text-sm">Sightseeing: Rada, Lepa</p>
+          <p class="text-center text-sm">Power Consumption: 9 MW</p>
+        </a>
+      </div>
+      <!-- Pakke-Kessang -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Pakke-Kessang_district">
+          <img src="https://via.placeholder.com/150" alt="Pakke-Kessang" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Pakke-Kessang</p>
+          <p class="text-center text-sm">Population: 17,000</p>
+          <p class="text-center text-sm">Sightseeing: Pakke Wildlife Sanctuary</p>
+          <p class="text-center text-sm">Power Consumption: 12 MW</p>
+        </a>
+      </div>
+      <!-- Rupa -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Rupa_district">
+          <img src="https://via.placeholder.com/150" alt="Rupa" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Rupa</p>
+          <p class="text-center text-sm">Population: 8,000</p>
+          <p class="text-center text-sm">Sightseeing: Rupa Fort</p>
+          <p class="text-center text-sm">Power Consumption: 5 MW</p>
+        </a>
+      </div>
+      <!-- Tirap -->
+      <div class="card">
+        <a href="https://en.wikipedia.org/wiki/Tirap_district">
+          <img src="https://via.placeholder.com/150" alt="Tirap" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Tirap</p>
+          <p class="text-center text-sm">Population: 53,000</p>
+          <p class="text-center text-sm">Sightseeing: Khonsa, Longding</p>
+          <p class="text-center text-sm">Power Consumption: 15 MW</p>
+        </a>
+      </div>
+    </div>
+  </div>
+<button class="back-to-top" onclick="scrollToTop()">&uarr;</button>
+
+  <!-- JavaScript for Back to Top button -->
+  <script>
+    // Show the button when the user scrolls down 20px from the top
+    window.onscroll = function() {
+      const backToTopButton = document.querySelector('.back-to-top');
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        backToTopButton.style.display = 'flex';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    };
+
+    // Scroll to the top of the document when the user clicks the button
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>

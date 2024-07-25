@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sikkim Districts</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: rgb(2, 2, 2); /* Default text color for readability */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/sikkim.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure the image stays behind the content */
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .card p {
+    color: rgb(254, 253, 253); /* Ensure all text within card is black */
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+  }
+
+  /* Ensure the content area has enough height to allow scrolling */
+  .scrollable-content {
+    min-height: 100vh;
+  }
+</style>
+</head>
+<body>
+<div class="background-image"></div>
+
+<div class="content scrollable-content">
+  <h1 class="text-3xl font-bold text-center mb-8">Districts of Sikkim</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+      <!-- Gangtok -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Gangtok_district">
+          <img src="https://via.placeholder.com/150" alt="Gangtok" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Gangtok</p>
+          <p class="text-center text-sm">Population: 100,000</p>
+          <p class="text-center text-sm">Sightseeing: MG Road, Tsomgo Lake</p>
+          <p class="text-center text-sm">Power Consumption: 50 MW</p>
+        </a>
+      </div>
+      <!-- Mangan -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Mangan_district">
+          <img src="https://via.placeholder.com/150" alt="Mangan" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Mangan</p>
+          <p class="text-center text-sm">Population: 30,000</p>
+          <p class="text-center text-sm">Sightseeing: Lachung, Yumthang Valley</p>
+          <p class="text-center text-sm">Power Consumption: 20 MW</p>
+        </a>
+      </div>
+      <!-- Namchi -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Namchi_district">
+          <img src="https://via.placeholder.com/150" alt="Namchi" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Namchi</p>
+          <p class="text-center text-sm">Population: 50,000</p>
+          <p class="text-center text-sm">Sightseeing: Samdruptse, Char Dham</p>
+          <p class="text-center text-sm">Power Consumption: 25 MW</p>
+        </a>
+      </div>
+      <!-- Gyalshing -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Gyalshing_district">
+          <img src="https://via.placeholder.com/150" alt="Gyalshing" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Gyalshing</p>
+          <p class="text-center text-sm">Population: 60,000</p>
+          <p class="text-center text-sm">Sightseeing: Pelling, Khecheopalri Lake</p>
+          <p class="text-center text-sm">Power Consumption: 30 MW</p>
+        </a>
+      </div>
+      <!-- Pakyong -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Pakyong_district">
+          <img src="https://via.placeholder.com/150" alt="Pakyong" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Pakyong</p>
+          <p class="text-center text-sm">Population: 40,000</p>
+          <p class="text-center text-sm">Sightseeing: Pakyong Monastery, Sikkim University</p>
+          <p class="text-center text-sm">Power Consumption: 15 MW</p>
+        </a>
+      </div>
+      <!-- Soreng -->
+      <div class="bg-white p-4 shadow-md rounded-lg">
+        <a href="https://en.wikipedia.org/wiki/Soreng_district">
+          <img src="https://via.placeholder.com/150" alt="Soreng" class="w-full h-48 object-cover rounded">
+          <p class="mt-2 text-center font-bold">Soreng</p>
+          <p class="text-center text-sm">Population: 70,000</p>
+          <p class="text-center text-sm">Sightseeing: Soreng Monastery, Bermiok</p>
+          <p class="text-center text-sm">Power Consumption: 25 MW</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

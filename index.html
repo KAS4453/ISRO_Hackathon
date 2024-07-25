@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/dropdown.css">
+  <link rel="stylesheet" href="css/countdown.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/splide.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="scripts/splide.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <title>Hackathon |ISRO</title>
+    <link rel="icon" type="images/x-icon" href="../../images/isro-logo-.png" />
+
+</head>
+
+<body class="overflow-x-hidden bg-gray-100">
+  
+  <div class="min-h-screen overflow-hidden grid place-items-center w-full  relative z-0 transition-all duration-[5s]">
+
+    <div class="absolute top-0 left-0 w-full h-full bg-black/40 z-[-1] "></div>
+    <!-- CAROUSEL BACKGROUND -->
+
+
+    <section
+      class="splide absolute  z-[-5] h-screen overflow-hidden brightness-75 top-0 left-0 transition-all ease-in-out duration-500"
+      aria-label="Slide Container Example">
+
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/carousal_img/1.png">
+            </div>
+
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/carousal_img/2.png">
+            </div>
+
+          </li>
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/carousal_img/3.png">
+            </div>
+
+          </li>
+
+          <li class="splide__slide">
+            <div class="splide__slide__container">
+              <img src="images/carousal_img/4.png">
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div class="splide__progress ">
+        <div class="splide__progress__bar  ">
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- NAVBAR  -->
+
+    <!-- SECTION 1 -->
+     <nav class="absolute top-0 left-0 w-full">
+    <div class=" w-full  py-4 hidden lg:flex items-center justify-center z-[10]">
+    
+    </div>
+
+
+    <!-- SECTION 2 -->
+    <div class="w-full   py-4 flex items-center justify-center ">
+
+      <div class="w-[85%] relative flex items-center   justify-between ">
+        <div class=" flex relative  gap-2 justify-center items-center ">
+          <img src="images/isro-logo-.png" class="h-12 md:h-24 md:w-full" />
+
+
+          <div class="logo-animation-wrapper relative -mt-12  md:text-2xl text-md h-full drops-shadow-lg w-full">
+
+            <h3>ISRO Hackathon <br> 2024 </h3>
+            <h3 class="ioe">ISRO Hackathon<br> 2024 </h3>
+            <h3 class="ar-fontfamily">ISRO Hackathon<br> 2024 </h3>
+          </div>
+        </div>
+
+
+
+        <!-- DROP DOWN NAV OPTIONS -->
+        <div class="lg:hidden flex ham_menu text-white cursor-pointer" onclick="menubar_toggle()">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <div class="dropdown_web_view lg:flex hidden">
+
+        </div>
+       
+      </div>
+    </div>
+
+  </nav>
+
+
+
+    <!-- DROPDOWN SECTION --> <!-- -scripts\dropdown.js -->
+<!-- Mobile View DropDOwn Section -->
+    <div class="z-[999] w-full md:w-[300px] min-h-screen absolute top-0 overflow-scroll transition-all -right-[600px] 
+    mx-auto px-6 flex flex-col justify-center bg-white text-black gap-6  dropdown_mobile_view_container">
+    
+      <span class="absolute right-6 top-12 cursor-pointer opacity-50 hover:opacity-100" onclick="menubar_toggle()">
+        <i class="fa-solid fa-xmark fa-xl "></i>
+      </span>
+     
+      <div class="dropdown_mobile_view_option_container z-[999] min-h-screen  overflow-scroll relative">
+
+      </div>
+
+    
+
+
+    </div>
+
+
+
+    <!-- MAIN HEADING ON HERO CONTAINER -->
+
+
+    <div class=" w-full  ">
+      <h1 class="lg:text-7xl text-5xl  text-white font-bold drop-shadow-lg whitespace-normal  text-center flex flex-col gap-1 border"
+        style="z-index: 5; white-space: normal; color: white; 
+       visibility: inherit; transition: none 0s ease 0s; text-align: center;  border-width: 0px;
+       margin: 0px; padding: 0px;letter-spacing: 0px;font-weight: 700; min-height: 0px; max-height: none;
+       opacity: 1;transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+
+
+        <span class="italic text-lg lg:text-2xl mb-3 lg:py-5 font-light  ">
+          Hello Everyone
+        </span>
+
+       Welcome to<span class="lg:text-5xl text-3xl mt-4 lg:mt-8  font-semibold text-shadow "> ISRO Hackathon 2024 </span>
+      </h1>
+      <div class="flex justify-center mt-8">
+        <a href="new_2/templates/map.html">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          GET STARTED
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- ABOUT -->
+  <div class="min-h-screen w-full  p-4 lg:p-12 justify-center ">
+    <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-12 p-4">
+      <div class="md:col-span-3">
+        <h1 class="font-bold text-4xl lg:text-5xl  ">Introduction</h1>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 mt-6">
+          <img class="shadow-lg rounded-lg col-span-2" src="images/scences/intro.png" />
+          <p class="col-span-3">
+            North India is a destination pulsating with extraordinary attractions. Endowed with sheer natural beauty and a rich cultural heritage, North India beckons you for a travel experience of a lifetime. North India Tour will take you to its historic, majestic and celestial destinations such as Delhi, Himachal Pradesh, Jammu & Kashmir, Rajasthan, Punjab, Haryana, Uttar Pradesh and Uttaranchal, which overflow with attractions. North India Tourism presents you fascinating attractions like world famous Heritage sites, hill stations, adventure sports, scenic beauty,cruises, wildlife and pilgrimage sites. North India is a big hit with honeymooners, adventure enthusiasts and nature lovers. Accommodation takes a whole new meaning in North India as here the options are mind- blowing. Offering a variety of choices in terms of accommodation, North India is the place where you can stay in royal palaces and experience the lifestyles of the raja-maharajas of the bygone era.
+            North India is a destination pulsating with extraordinary attractions. Endowed with sheer natural beauty and a rich cultural heritage, North India beckons you for a travel experience of a lifetime. North India Tour will take you to its historic, majestic and celestial destinations such as Delhi, Himachal Pradesh, Jammu & Kashmir, Rajasthan, Punjab, Haryana, Uttar Pradesh and Uttaranchal, which overflow with attractions. North India Tourism presents you fascinating attractions like world famous Heritage sites, hill stations, adventure sports, scenic beauty,cruises, wildlife and pilgrimage sites. North India is a big hit with honeymooners, adventure enthusiasts and nature lovers. Accommodation takes a whole new meaning in North India as here the options are mind- blowing. Offering a variety of choices in terms of accommodation, North India is the place where you can stay in royal palaces and experience the lifestyles of the raja-maharajas of the bygone era.          </p>
+        </div>
+      </div>
+     
+    </div>
+
+
+    <!-- <div class="w-full md:p-12 grid grid-cols-1 md:flex  justify-center gap-4 items-center">
+
+      
+      <a href="">
+      <div class=" grid grid-cols-2 shadow-lg rounded-xl border-black/20 border p-6 border-2 relative ">
+        <img src="images/serv/serv-1.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">15+</h1>
+          <p class="font-semibold text-lg text-blue-500">Packages</p>
+        </div>
+      </div></a>
+
+      <a href="">
+      <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/serv/serv-2.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">8+</h1>
+          <p class="font-semibold text-lg text-blue-500">Treks</p>
+        </div>
+      </div> </a>
+
+      <a  href="">
+      <div class=" grid grid-cols-2 gap-4 border p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/serv/serv-3.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">10+</h1>
+          <p class="font-semibold text-lg text-blue-500">Safaris</p>
+        </div>
+      </div></a>
+
+      <a href="">
+        <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/serv/serv-4.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">2+</h1>
+          <p class="font-semibold text-lg text-blue-500">SUMS</p>
+        </div>
+       </div>
+      </a>
+      <a href="">
+        <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/serv/serv-5.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">20+</h1>
+          <p class="font-semibold text-lg text-blue-500">Locations</p>
+        </div>
+       </div>
+      </a>
+      <a href="">
+        <div class=" grid grid-cols-2 border gap-4 p-6 rounded-xl border-black/20 shadow-lg border-2  ">
+        <img src="images/serv/serv-6.png" class="h-[90px]" />
+        <div class="grid grid-cols-1 gap-1 ">
+          <h1 class="font-bold text-5xl">5+</h1>
+          <p class="font-semibold text-lg text-blue-500">Raftings</p>
+        </div>
+       </div>
+      </a>
+      
+      
+    </div>   -->
+
+
+
+
+
+  </div>
+
+
+
+
+
+  <!-- FOOTER -->
+   
+  <div id="contact" class="w-full bg-black grid grid-cols-1 md:grid-cols-4 p-12 gap-6 text-white  ">
+    <div class="md:col-span-2">
+      <h1 class="footer_heading">About Us</h1>
+      <p>
+        North India is a big hit with honeymooners, adventure enthusiasts and nature lovers. Accommodation takes a whole new meaning in North India as here the options are mind- blowing. Offering a variety of choices in terms of accommodation, North India is the place where you can stay in royal palaces and experience the lifestyles of the raja-maharajas of the bygone era.
+      </p>
+
+    </div>
+    <div>
+      <h1 class="footer_heading">Useful Links</h1>
+      <ul class="footer_items">
+        <a href="" target="_blank">
+          <li>Link <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="" target="_blank">
+          <li>Link <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="" target="_blank">
+          <li>Link <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="" target="_blank">
+          <li>Link <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+        <a href="" target="_blank">
+          <li>Link <i class="fa-arrow-right fa-solid"></i></li>
+        </a>
+
+
+      </ul>
+
+    </div>
+    <div>
+      <h1 class="footer_heading">Contact Us</h1>
+      <ul>
+
+        <li>Your name<br>
+        your company name<br>
+          tour location<br>
+          city<br><br>
+          Phone : +91 0000000000<br>
+          Email &nbsp; : name@work.in<br><br>
+          <a href=""> <i class="fa-brands fa-x-twitter"></i></a>&nbsp;&nbsp;
+          <a href=""> <i class="fa-brands fa-facebook-f"></i></a>&nbsp;&nbsp;
+         <i class="fa-brands fa-linkedin-in"></i></a>&nbsp;&nbsp; 
+          <i class="fa-brands fa-brands fa-youtube"></i></a>&nbsp;&nbsp; 
+          <a href=""> <i class="fa-brands fa-google-play"></i></a>&nbsp;&nbsp;
+        </li>
+
+      </ul>
+    </div>
+    <div class="md:col-span-4">
+
+      <p class="text-center">
+        © 2024 Hackathon, ISRO | All Rights Reserved
+
+    </div>
+  </div>
+
+
+
+
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/dropdown.js"></script>
+
+ 
+  
+  <script src="scripts/header.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script>
+
+    var splide = new Splide('.splide', {
+      type: 'fade',
+      autoplay: 'play',
+      perPage: 1,
+      arrows: false,
+      rewind: true,
+    });
+
+    splide.mount()
+
+
+  </script>
+
+  <script>
+  </script>
+
+  <style>
+
+  </style>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>

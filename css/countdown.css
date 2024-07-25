@@ -1,0 +1,21 @@
+.countdown{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background: #22648f;
+    color: white;
+    width: 200px;
+    border-radius: 12px;
+    gap: 1rem;
+
+}
+
+
+@media screen and (max-width: 600px){
+    .countdown{
+        width: 100%;
+    }
+  
+}
